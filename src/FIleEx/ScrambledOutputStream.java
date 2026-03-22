@@ -1,3 +1,5 @@
+package FIleEx;
+
 import java.io.*;
 
 public class ScrambledOutputStream extends FilterOutputStream {

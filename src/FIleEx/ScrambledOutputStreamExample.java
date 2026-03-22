@@ -1,8 +1,10 @@
+package FIleEx;
+
 import java.io.*;
 
 /**
  * ============================================================
- *  ScrambledOutputStream 학습 예제
+ *  FIle.ScrambledOutputStream 학습 예제
  * ============================================================
  *
  *  이 예제를 통해 배울 수 있는 것들:
@@ -12,14 +14,14 @@ import java.io.*;
  *    4. try-with-resources를 활용한 안전한 스트림 관리
  *
  *  실행 방법:
- *    javac ScrambledOutputStream.java ScrambledOutputStreamExample.java
- *    java ScrambledOutputStreamExample
+ *    javac FIle.ScrambledOutputStream.java FIle.ScrambledOutputStreamExample.java
+ *    java FIle.ScrambledOutputStreamExample
  */
 public class ScrambledOutputStreamExample {
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println("=== ScrambledOutputStream 학습 예제 ===\n");
+        System.out.println("=== FIle.ScrambledOutputStream 학습 예제 ===\n");
 
         // ── 예제 1: 기본 동작 이해하기 ──────────────────────────
         example1_BasicScramble();

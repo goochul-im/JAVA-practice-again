@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 학생 정보를 담고 있는 XML 파일 -->
+<!-- XML 파싱 예제에서 사용할 샘플 데이터입니다 -->
+<students>
+
+    <student id="1">
+        <name>김민준</name>
+        <age>21</age>
+        <major>컴퓨터공학</major>
+        <grade>3</grade>
+        <email>minjun.kim@university.ac.kr</email>
+    </student>
+
+    <student id="2">
+        <name>이서연</name>
+        <age>22</age>
+        <major>소프트웨어공학</major>
+        <grade>4</grade>
+        <email>seoyeon.lee@university.ac.kr</email>
+    </student>
+
+    <student id="3">
+        <name>박지호</name>
+        <age>20</age>
+        <major>정보보안</major>
+        <grade>2</grade>
+        <email>jiho.park@university.ac.kr</email>
+    </student>
+
+    <student id="4">
+        <name>최유나</name>
+        <age>23</age>
+        <major>인공지능</major>
+        <grade>4</grade>
+        <email>yuna.choi@university.ac.kr</email>
+    </student>
+
+</students>

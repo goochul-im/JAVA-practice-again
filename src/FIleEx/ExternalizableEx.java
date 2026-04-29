@@ -19,6 +19,7 @@ public class ExternalizableEx {
     }
 
     private static class Employee implements Externalizable{
+        // 개발자가 직접 직렬화/역직렬화 로직을 작성해야하는 인터페이스
 
         private String name;
         private int age;

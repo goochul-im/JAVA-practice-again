@@ -25,12 +25,13 @@ public class ApptEx {
             if (size == appts.length) {
                 return;
             }
+            System.out.println("부모꺼");
             appts[size++] = appt;
         }
 
         public void addAppts(Appt[] appts) {
             for (int i = 0; i < appts.length; i++)
-                addAppt(appts[i]);
+                this.addAppt(appts[i]); // this를 써도 안되네?
         }
 
     }
@@ -40,8 +41,8 @@ public class ApptEx {
 
         @Override
         public void addAppt(Appt appt) {
-            System.out.println(appt.toString());
-            super.addAppt(appt);
+            System.out.println("자식꺼");
+//            super.addAppt(appt);
         }
 
         @Override

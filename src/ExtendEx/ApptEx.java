@@ -1,5 +1,7 @@
 package ExtendEx;
 
+import java.lang.reflect.Method;
+
 public class ApptEx {
 
     private static class Appt{
@@ -30,9 +32,18 @@ public class ApptEx {
         }
 
         public void addAppts(Appt[] appts) {
-            for (int i = 0; i < appts.length; i++)
+            for (int i = 0; i < appts.length; i++) {
                 this.addAppt(appts[i]); // this를 써도 안되네?
+                try {
+                    Method addAppt = ApptCalendar.class.getDeclaredMethod("addAppt", Appt.class);
+                    Method logAppt = LoggingApptCalendar.class.getDeclaredMethod("addAppt", Appt.class);
+                    addAppt.invoke(this,(Object) appts[i]);
+                } catch (Exception e) {
+                    System.err.println("예외터짐");
+                }
+            }
         }
+
 
     }
 

@@ -2,7 +2,7 @@ package threadEx;
 
 public class ThreadEx {
 
-    static void main() {
+    static void main() throws InterruptedException {
 
         Runnable runnable = new Runnable(){
             @Override
@@ -17,6 +17,14 @@ public class ThreadEx {
 
             }
         };
+
+        Thread thread = new Thread(runnable);
+        thread.start();
+        System.out.println("main thread");
+
+        thread.join();
+
+        System.out.println("main end");
 
     }
 

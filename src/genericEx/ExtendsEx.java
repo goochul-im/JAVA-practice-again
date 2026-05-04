@@ -78,6 +78,8 @@ public class ExtendsEx {
         Shape[] circleList = new Circle[5];
 
 
+
+
         mergeList(new ArrayList<>(3));
 
     }

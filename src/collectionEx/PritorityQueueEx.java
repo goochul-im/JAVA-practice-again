@@ -29,4 +29,16 @@ public class PritorityQueueEx {
 
     }
 
+    private static class ClassEx implements Comparable<ClassEx> {
+
+        private String name;
+        private Integer o1;
+
+        @Override
+        public int compareTo(ClassEx o) {
+
+            return Integer.compare(this.o1, o.o1);
+        }
+    }
+
 }

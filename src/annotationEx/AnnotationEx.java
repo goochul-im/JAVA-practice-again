@@ -1,6 +1,7 @@
 package annotationEx;
 
 
+@Stub
 public class AnnotationEx {
 
     @Stub

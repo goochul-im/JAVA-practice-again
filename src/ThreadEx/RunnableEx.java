@@ -1,4 +1,4 @@
-package ThreadEx;
+package threadEx;
 
 public class RunnableEx {
 

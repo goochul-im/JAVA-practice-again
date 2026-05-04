@@ -1,4 +1,4 @@
-package ThreadEx;
+package threadEx;
 
 import java.util.concurrent.CountDownLatch;
 

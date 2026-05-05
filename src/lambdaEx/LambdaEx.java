@@ -1,5 +1,7 @@
 package lambdaEx;
 
+import java.util.function.Predicate;
+
 public class LambdaEx {
 
     private interface InterA {
@@ -16,6 +18,11 @@ public class LambdaEx {
 
 
     static void main() {
+
+        Predicate<Integer> p = i -> i % 2 == 0;
+        Predicate<Integer> negate = p.negate();
+
+
 
         run(10 ,(a, b) -> System.out.println(a * b));
 

@@ -1,30 +1,34 @@
 package classEx;
 
+class NewInnerEx {
+
+    int i = 10;
+
+    class NNInner {
+
+        int i = 20;
+
+        void run() {
+            int i = 30;
+            System.out.println(i);
+            System.out.println(this.i);
+            System.out.println(NewInnerEx.this.i);
+        }
+
+    }
+
+}
+
 public class InnerNonStaticClassEx {
 
-    static {
-        System.out.println("outer init");
-    }
+    public static void main(String[] args) {
 
-    private int i;
+        NewInnerEx.NNInner nnInner = new NewInnerEx().new NNInner();
+        nnInner.run();
 
-    private void exe() {
-        System.out.println("exe");
-    }
-
-    private static String name = "classEx";
-
-    class InnerClass {
-
-        static {
-            System.out.println("inner init");
-        }
-
-        void method1() {
-            exe();
-            i = 20;
-            name = "classUx"; // 탑 레벨 클래스의 name은 static이라 이미 초기화되었기에 접근 가능
-        }
+        new Object(){void run() {
+            System.out.println("hi");
+        }}.run();
 
     }
 

@@ -16,7 +16,11 @@ public class InnerStaticClassEx {
         System.out.println("method2");
     }
 
+    private int uu = 30;
+
     public static class InnerStatic{
+
+
 
         static {
             System.out.println("InnerStatic initialize");
